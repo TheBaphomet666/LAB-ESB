@@ -20,6 +20,7 @@ Corriendo ServiceMix en el contenedor
 ![](https://github.com/TheBaphomet666/LAB-ESB/blob/master/Images/running%20servicemix.PNG)
 
 Configuración de las reglas para entrada y salida de tcp
+Disclaimer: acá abrí todos los puertos TCP pero la idea es solo abrir la regla de entrada y salida de TCP 61616
 
 ![](https://github.com/TheBaphomet666/LAB-ESB/blob/master/Images/scurity%20group%20rules.PNG)
 
