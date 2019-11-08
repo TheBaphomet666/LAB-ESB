@@ -7,18 +7,18 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
-import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.impl.DefaultCamelContext;
 
-public class Client {
+public class Producer {
 
     public static void main(String[] args)
     {
-        Client ex = new Client();
+        Producer ex = new Producer();
         ex.run();
     }
 
     public void run(){
+
         CamelContext context = new DefaultCamelContext();
         //String brokerURL = args[0];
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616?jms.useAsyncSend=true");
@@ -54,4 +54,6 @@ public class Client {
             e.printStackTrace();
         }
     }
+
+
 }
