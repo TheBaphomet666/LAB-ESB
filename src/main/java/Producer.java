@@ -21,7 +21,7 @@ public class Producer {
 
         CamelContext context = new DefaultCamelContext();
         //String brokerURL = args[0];
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616?jms.useAsyncSend=true");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://ec2-184-73-63-25.compute-1.amazonaws.com:61616?jms.useAsyncSend=true");
         try {
             // Create a Connection
             Connection connection = connectionFactory.createConnection("smx","smx");
